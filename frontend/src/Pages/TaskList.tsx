@@ -14,7 +14,6 @@ export default function TaskList() {
                 <input type="radio" />
                 Fazer lição de casa
                 <div className="taskActions">
-                  <button className="completeButton">✓</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -22,7 +21,6 @@ export default function TaskList() {
                 <input type="radio" />
                 Estudar para a prova
                 <div className="taskActions">
-                  <button className="completeButton">✓</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -30,7 +28,6 @@ export default function TaskList() {
                 <input type="radio" />
                 Fazer o projeto de matemática
                 <div className="taskActions">
-                  <button className="completeButton">✓</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -38,7 +35,6 @@ export default function TaskList() {
                 <input type="radio" />
                 Ler um capítulo do livro
                 <div className="taskActions">
-                  <button className="completeButton">✓</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -46,7 +42,6 @@ export default function TaskList() {
                 <input type="radio" />
                 Praticar programação
                 <div className="taskActions">
-                  <button className="completeButton">✓</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -61,14 +56,23 @@ export default function TaskList() {
               <li className="completedTaskItem">
                 <input type="radio" />
                 Lavar a louça
+                <div className="taskActions">
+                  <button className="deleteButton">✕</button>
+                </div>
               </li>
               <li className="completedTaskItem">
                 <input type="radio" />
                 Fazer dever de casa de Português
+                <div className="taskActions">
+                  <button className="deleteButton">✕</button>
+                </div>
               </li>
               <li className="completedTaskItem">
                 <input type="radio" />
                 Jogar bola
+                <div className="taskActions">
+                  <button className="deleteButton">✕</button>
+                </div>
               </li>
             </ul>
           </div>
