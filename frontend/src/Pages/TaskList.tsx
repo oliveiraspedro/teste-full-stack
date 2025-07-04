@@ -1,5 +1,10 @@
 import "./TaskList.css";
-import SideBar from "../Components/SideBar";
+import SideBar from "../Components/SideBar/SideBar";
+import Task from "../Components/Task/Task";
+
+const handleMarkCompleted = () => {};
+const handleEdit = () => {};
+const handleDelete = () => {};
 
 export default function TaskList() {
   return (
@@ -10,52 +15,22 @@ export default function TaskList() {
           <div className="taskSection">
             <h1>Lista de Tarefas</h1>
             <ul className="taskList">
-              <li className="taskItem">
-                <input type="radio" />
-                Fazer lição de casa
-                <div className="taskActions">
-                  <button className="editButton">✏️</button>
-                  <button className="deleteButton">✕</button>
-                </div>
-              </li>
-              {/*<li className="taskItem">
-                <input type="text" value="Fazer lição de casa" />
-                <div className="taskActions">
-                  <button className="deleteButton">✕</button>
-                </div>
-              </li>*/}
-              <li className="taskItem">
-                <input type="radio" />
-                Estudar para a prova
-                <div className="taskActions">
-                  <button className="editButton">✏️</button>
-                  <button className="deleteButton">✕</button>
-                </div>
-              </li>
-              <li className="taskItem">
-                <input type="radio" />
-                Fazer o projeto de matemática
-                <div className="taskActions">
-                  <button className="editButton">✏️</button>
-                  <button className="deleteButton">✕</button>
-                </div>
-              </li>
-              <li className="taskItem">
-                <input type="radio" />
-                Ler um capítulo do livro
-                <div className="taskActions">
-                  <button className="editButton">✏️</button>
-                  <button className="deleteButton">✕</button>
-                </div>
-              </li>
-              <li className="taskItem">
-                <input type="radio" />
-                Praticar programação
-                <div className="taskActions">
-                  <button className="editButton">✏️</button>
-                  <button className="deleteButton">✕</button>
-                </div>
-              </li>
+              <Task
+                taskID="1"
+                taskName="Fazer dever de matemática"
+                isCompleted={false}
+                markCompleted={handleMarkCompleted}
+                onEdit={handleEdit}
+                onDelete={handleDelete}
+              ></Task>
+              <Task
+                taskID="2"
+                taskName="Fazer dever de português"
+                isCompleted={false}
+                markCompleted={handleMarkCompleted}
+                onEdit={handleEdit}
+                onDelete={handleDelete}
+              ></Task>
             </ul>
             <div className="addTaskSection">
               <button className="addButton">+</button>

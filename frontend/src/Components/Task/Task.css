@@ -1,0 +1,38 @@
+.taskItem{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.taskActions{
+    margin-left: auto;
+}
+
+.taskActions button{
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editButton{
+    background-color: #cfcfcf;
+    margin-right: 15px;
+}
+
+.deleteButton{
+    background-color: #f44336;
+}
+
+.addTaskSection{
+    display: flex;
+    justify-content: center;
+}
