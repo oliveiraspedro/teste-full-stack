@@ -14,13 +14,21 @@ export default function TaskList() {
                 <input type="radio" />
                 Fazer lição de casa
                 <div className="taskActions">
+                  <button className="editButton">✏️</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
+              {/*<li className="taskItem">
+                <input type="text" value="Fazer lição de casa" />
+                <div className="taskActions">
+                  <button className="deleteButton">✕</button>
+                </div>
+              </li>*/}
               <li className="taskItem">
                 <input type="radio" />
                 Estudar para a prova
                 <div className="taskActions">
+                  <button className="editButton">✏️</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -28,6 +36,7 @@ export default function TaskList() {
                 <input type="radio" />
                 Fazer o projeto de matemática
                 <div className="taskActions">
+                  <button className="editButton">✏️</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -35,6 +44,7 @@ export default function TaskList() {
                 <input type="radio" />
                 Ler um capítulo do livro
                 <div className="taskActions">
+                  <button className="editButton">✏️</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
@@ -42,16 +52,20 @@ export default function TaskList() {
                 <input type="radio" />
                 Praticar programação
                 <div className="taskActions">
+                  <button className="editButton">✏️</button>
                   <button className="deleteButton">✕</button>
                 </div>
               </li>
             </ul>
+            <div className="addTaskSection">
+              <button className="addButton">+</button>
+            </div>
           </div>
 
           <div className="sectionDivider"></div>
 
           <div className="completedTasksSection">
-            <h2>Tarefas Concluídas</h2>
+            <h1>Tarefas Concluídas</h1>
             <ul className="completedTasksList">
               <li className="completedTaskItem">
                 <input type="radio" />
